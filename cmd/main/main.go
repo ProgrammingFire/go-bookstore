@@ -16,7 +16,7 @@ func main() {
 		fmt.Fprintf(w, "Hello World!")
 	})
 
-	routes.HandleRoutes(r)
+	routes.HandleBookStoreRoutes(r)
 
 	log.Fatal(http.ListenAndServe(":8080", r))
 }

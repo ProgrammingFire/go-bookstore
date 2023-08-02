@@ -5,7 +5,7 @@ import (
 	"github.com/programmingfire/bookstore/pkg/controllers"
 )
 
-func HandleRoutes(r *mux.Router) {
+func HandleBookStoreRoutes(r *mux.Router) {
 	r.HandleFunc("/books", controllers.GetBooks).Methods("GET")
 	r.HandleFunc("/books", controllers.CreateBook).Methods("POST")
 	r.HandleFunc("/books/{id}", controllers.GetBook).Methods("GET")
